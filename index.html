@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML5 Audio</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    <!--HTML5 audio-->
+    <div id="wrapper">
+        <audio id="mytrack">
+		<source src="http://167.114.246.249:8010/stream?type=.mp3">
+	</audio>
+
+
+        <nav>
+            
+            <div id="buttons">
+                <button id="playButton" onclick="playOrpause()"></button>
+                <span id="songinfo" class="cc_streaminfo" data-type="song" data-username="radiopofpp">Φόρτωση ...</span>
+                <button id="muteButton"></button>
+                <input id="volumeslider" type="range" min="0" max="100" value="20" step="1">
+                
+                
+            </div>
+        </nav>
+
+    </div>
+
+    <script type="text/javascript" src="controls.js"></script>>
+    <script language="javascript" type="text/javascript" src="https://live.webhosting4u.gr:2199/system/streaminfo.js"></script>
+</body>
+
+</html>

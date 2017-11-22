@@ -1,0 +1,64 @@
+body{
+    background-color: #101010;
+}
+#wrapper{
+    width: auto;
+    margin:1px;
+}
+
+nav{
+   background-color: white;
+    height: auto;
+    width: auto;
+    padding-bottom: 3px;
+    
+}
+#volumeslider{
+    width: auto;
+    position: relative;
+ 
+}
+#songinfo{
+    width: auto;
+    position: relative;
+}
+#playButton{
+    background-color: white;
+    height: 32px;
+    width: 32px;
+    border: none;
+   
+    background-image: url(../img/play.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#muteButton{
+    background-color: white;
+    height: 32px;
+    width: 32px;
+    border: none;
+   
+    background-image: url(../img/unmute.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#playButton:active,#muteButton:active{
+    position: relative;
+    top: 2px;
+}
+
+input[type='range'] {
+    -webkit-appearance: none !important;
+    background: #000;
+	border:#666 1px solid;
+    height:4px;
+}
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background: #FFF;
+    height:15px;
+    width:15px;
+	border-radius:100%;
+	cursor:pointer;
+}
